@@ -6,6 +6,14 @@ window.addEventListener('resize', function(event) {
     document.getElementById("aboutus").style.marginTop = heroheight + "px";
 }, true);
 
+function scrollToBuyACask() {
+    const isMobile = window.innerWidth <= 900;
+    const targetId = isMobile ? 'anchor_buyacask_mobile' : 'anchor_buyacask_desktop';
+    const target = document.getElementById(targetId);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
 //
 //window.onscroll = function (event) {
